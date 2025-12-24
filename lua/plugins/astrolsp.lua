@@ -46,16 +46,12 @@ return {
       gopls = {
         settings = {
           gopls = {
-            gofumpt = true, -- Use gofumpt formatting
+            gofumpt = true,
             codelenses = {
-              gc_details = false,
               generate = true,
-              regenerate_cgo = true,
-              run_govulncheck = true,
+              gc_details = false,
               test = true,
               tidy = true,
-              upgrade_dependency = true,
-              vendor = true,
             },
             hints = {
               assignVariableTypes = true,
@@ -66,22 +62,22 @@ return {
               parameterNames = true,
               rangeVariableTypes = true,
             },
+            -- O erro geralmente está aqui. Use apenas os nomes oficiais:
             analyses = {
-              fieldalignment = true,
-              nilness = true,
               unusedparams = true,
               unusedwrite = true,
+              fieldAlignment = true,
+              nilness = true,
               useany = true,
             },
+            staticcheck = true,
             usePlaceholders = true,
             completeUnimported = true,
-            staticcheck = true,
             directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
             semanticTokens = true,
           },
         },
       },
-      -- jdtls is configured separately in plugins/java.lua to avoid conflicts
     },
     -- customize how language servers are attached
     handlers = {

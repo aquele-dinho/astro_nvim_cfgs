@@ -28,26 +28,3 @@ end
 
 require "lazy_setup"
 require "polish"
-
--- Theme
--- Configuration for Catppuccin
-require("catppuccin").setup {
-  flavour = "mocha", -- Choose your flavour: 'mocha', 'macchiato', 'frappe', or 'latte'
-  background = { -- set overridable bg color
-    dark = "mocha",
-    light = "latte",
-  },
-  transparent_background = true, -- whether the background should be transparent
-  show_errors = false, -- show/hide error icons in the sign column
-  term_colors = true, -- whether to enable terminal colors
-  compile = { -- hot reload the theme
-    enabled = true,
-    fire_after_setup = true,
-    transparent_compile = false,
-    -- ... other compile options
-  },
-  -- ... other options
-}
-
--- Set your colorscheme
-vim.g.colorscheme = "catppuccin"

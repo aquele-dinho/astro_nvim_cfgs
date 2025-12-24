@@ -73,7 +73,7 @@ return {
 
         -- Previewing Markdown File
         ["<Leader>mp"] = {
-          "<cmd>PeekOpen<CR>", desc="Preview Markdown"
+          "<cmd>MDViewerToggle<CR>", desc="Preview Markdown"
         },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus

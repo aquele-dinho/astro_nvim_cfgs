@@ -3,7 +3,7 @@ return {
   ft = "markdown",
   opts = {
     style = "clean",
-    window_type = "vsplit", -- 'vsplit' | 'hsplit' | 'float'
+    window_type = "float", -- 'vsplit' | 'hsplit' | 'float'
     auto_refresh = true,
     -- mdviewer_path = '/usr/local/bin/mdviewer',
     -- mermaid_mode = 'terminal', -- 'terminal' | 'svg' | 'png' | 'url'
